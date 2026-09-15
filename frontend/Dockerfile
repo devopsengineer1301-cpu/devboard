@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2 — distroless runtime (minimal, secure)
-FROM dhi.io/node:26
+FROM node:26-alpine
 
 WORKDIR /app
 
